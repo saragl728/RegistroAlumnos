@@ -6,4 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".UpdateActivity">
 
+    <EditText
+        android:id="@+id/nombreNuevo"
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Introducir nombre de alumno"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bActualizar"/>
+
+    <EditText
+        android:id="@+id/cursoNuevo"
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Introducir el nuevo curso"
+        app:layout_constraintTop_toBottomOf="@id/nombreNuevo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/bActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar curso"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cursoNuevo"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

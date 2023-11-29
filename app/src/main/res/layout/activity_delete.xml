@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".DeleteActivity">
 
+    <EditText
+        android:id="@+id/alumnoBorrable"
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Introducir el nombre a eliminar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bEliminar"/>
+
+    <Button
+        android:id="@+id/bEliminar"
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar alumno"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alumnoBorrable"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
