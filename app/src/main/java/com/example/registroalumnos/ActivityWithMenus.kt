@@ -5,7 +5,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 
-class ActivityWithMenus : AppCompatActivity() {
+open class ActivityWithMenus : AppCompatActivity() {
     companion object{
         var actividadActual = 0;
     }
