@@ -9,5 +9,10 @@ class UpdateActivity : ActivityWithMenus() {
         //setContentView(R.layout.activity_update)
         val binding = ActivityUpdateBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //tengo que hacer que actualice el alumno
+        binding.bActualizar.setOnClickListener {
+
+        }
     }
 }

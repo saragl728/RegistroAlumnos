@@ -11,5 +11,10 @@ class DeleteActivity : ActivityWithMenus() {
         //setContentView(R.layout.activity_delete)
         val binding = ActivityDeleteBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //tengo que hacer que borre al alumno
+        binding.bEliminar.setOnClickListener {
+
+        }
     }
 }
