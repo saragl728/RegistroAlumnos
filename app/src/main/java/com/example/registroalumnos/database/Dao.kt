@@ -10,11 +10,11 @@ interface Dao {
     fun obtenerAlumnoPorNombre(nombre:String): Alumnos
 
     @Insert
-    fun insertarAlumno(nombre:String, apellido:String, curso:String)
+    fun insertarAlumno(alumno: Alumnos)
 
     @Delete
-    fun borrarAlumno(nombre: String)
+    fun borrarAlumno(alumno: Alumnos)
 
     @Update
-    fun actualizarAlumno(nombre:String, curso:String)
+    fun actualizarAlumno(alumno: Alumnos)
 }
